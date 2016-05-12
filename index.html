@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intro to Leaflet</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+	<!-- Mobile meta tags-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="MobileOptimized" content="320"/>
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/lib/leaflet-0.75.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="leaflet">
+			<h1>
+			<span>A simple <a class="links" href="http://leafletjs.com/" target="_blank">LeafletJS</a> map of Iowa Breweries
+			</span>
+			</h1>
+			<p>
+				<span>Thanks so much to <strong><a class="links" href="http://www.thegazette.com/data" target="_blank">Chris Essig</a></strong> for the in-depth tutorial at NICAR 2016 in Denver, CO!
+				</span>
+			</p>
+		</div>
+		<div class="contact-info">
+			<h3><a href="https://github.com/rfaroul" target="_blank">Rachelle Erica Faroul</a></h3>
+			<p>Updated April 4, 2016</p>
+		</div>
+		<div id="map"></div>
+	</div>
+
+	<!-- Javascript libraries -->
+	<script src="js/lib/leaflet-0.75.js"></script>
+	<script src="js/lib/tile.stamen-1.3.0.js"></script>
+	
+	<!-- data sources -->
+	<script src="json/ia-breweries.json"></script>
+	<script src="json/ia-counties.geojson"></script>
+
+	<!-- The file that creates the map -->
+	<script src="js/script.js"></script>
+</body>
+</html>
